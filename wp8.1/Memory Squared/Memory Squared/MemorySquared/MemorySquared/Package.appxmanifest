@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+
+  <Identity Name="54935LloydHanneman.MemorySquared"
+            Publisher="CN=5144589F-C3AD-415B-A63A-95271230E75A"
+            Version="1.1.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="a304eb29-db74-467e-8ea1-a0ac4b0eef2b" PhonePublisherId="b2fbe965-9b03-4b55-9a37-d7d2e7a57d52"/>
+
+  <Properties>
+    <DisplayName>MemorySquared</DisplayName>
+    <PublisherDisplayName>Lloyd Hanneman</PublisherDisplayName>
+    <Logo>Assets\appstoreimage.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="xa304eb29ydb74y467ey8ea1ya0ac4b0eef2bx"
+        Executable="AGHost.exe"
+        EntryPoint="Pages/Menu.xaml">
+      <m3:VisualElements
+          DisplayName="MemorySquared"
+          Square150x150Logo="Assets\Tiles\mediumtileplustitle.png"
+          Square44x44Logo="Assets\Tiles\smalltilelogo.png"
+          Description="MemorySquared"
+          ForegroundText="light"
+          BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\Tiles\smalltilelogo.png"/>
+        <m3:SplashScreen Image="SplashScreenImage.jpg" />
+        <m3:ApplicationView MinWidth="width320"/> <!--Used in XAML Designer. DO NOT REMOVE-->
+      </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">
+          <BackgroundTasks>
+          <Task Type="systemEvent" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+</Package>

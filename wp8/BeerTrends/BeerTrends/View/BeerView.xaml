@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="BeerTrends.View.BeerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:local="clr-namespace:BeerTrends.Converters"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <UserControl.Resources>
+        <local:VisibilityConverter x:Key="VisibilityConverter"/>
+        <local:BeerPropertyConverter x:Key="BeerPropertyConverter"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <StackPanel Margin="5">
+            
+            <Image Height="256" Width="256" Source="{Binding labels.medium}" Margin="2" Stretch="Fill" />
+
+            <RichTextBox Visibility="{Binding description, Converter={StaticResource VisibilityConverter}, ConverterParameter=Visible}">
+                <Paragraph>
+                    <Run Text="{Binding description, Converter={StaticResource BeerPropertyConverter}, ConverterParameter=description}"/>
+                </Paragraph>
+            </RichTextBox>
+
+            <RichTextBox Visibility="{Binding abv, Converter={StaticResource VisibilityConverter}, ConverterParameter=Visible}">
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="ABV: " />
+                    <Run Text="{Binding abv, Converter={StaticResource BeerPropertyConverter}, ConverterParameter=abv}"/>
+                </Paragraph>
+            </RichTextBox>
+
+            <RichTextBox Visibility="{Binding ibu, Converter={StaticResource VisibilityConverter}, ConverterParameter=Visible}">
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="IBU: " />
+                    <Run Text="{Binding ibu, Converter={StaticResource BeerPropertyConverter}, ConverterParameter=ibu}"/>
+                </Paragraph>
+            </RichTextBox>
+
+            <RichTextBox Visibility="{Binding isOrganic, Converter={StaticResource VisibilityConverter}, ConverterParameter=Visible}">
+                <Paragraph>
+                    <Run FontWeight="Bold" Text="Organic: " />
+                    <Run Text="{Binding isOrganic, Converter={StaticResource BeerPropertyConverter}, ConverterParameter=isOrganic}"/>
+                </Paragraph>
+            </RichTextBox>          
+            
+           
+          
+           
+            
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>qps-ploc</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>[FCE7A][!!_МÉМÕŔŶ ŞQÙÁŖÊĎ_!!!!]</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>[968BD][!!_áđď_!!]</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>[B3C8D][!!_Μéиµ Ìťéм_!!]</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>[CC3D9][!!_Îиšţřùčτìõйś_!!]</value>
+  </data>
+  <data name="MainMenu" xml:space="preserve">
+    <value>[0F053][!!_mãíй мęйú_!!]</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>[41D93][!!_Õрτîòйş_!!]</value>
+  </data>
+  <data name="ViewLeaderboard" xml:space="preserve">
+    <value>[A6801][!!_Víèẅ Ļéãðéŗьôáŕð_!!!!]</value>
+  </data>
+  <data name="AboutLower" xml:space="preserve">
+    <value>[BD7D6][!!_ãвòúτ_!!]</value>
+  </data>
+  <data name="AddName" xml:space="preserve">
+    <value>[74636][!!_âđđ ήâмè_!!]</value>
+  </data>
+  <data name="ChooseMode" xml:space="preserve">
+    <value>[EC886][!!_ĉĥõôšè mòðè_!!]</value>
+  </data>
+  <data name="DisablePopup" xml:space="preserve">
+    <value>[3395F][!!_Ðíśáьĺè ţĥíš ρòрúρ įй τнè Òþťįôήş мêиû_!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>[5E3FE][!!_Éáŝў_!!]</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>[8CFCD][!!_Ηâřð_!!]</value>
+  </data>
+  <data name="HighScoreEasy" xml:space="preserve">
+    <value>[5D60F][!!_Нíġн Šćôŗè (Ęâŝÿ)_!!!!!!]</value>
+  </data>
+  <data name="HighScoreHard" xml:space="preserve">
+    <value>[29268][!!_Ħìģĥ Śĉõŕę (Ĥàřď)_!!!!!!]</value>
+  </data>
+  <data name="MainMenuButton" xml:space="preserve">
+    <value>[7EFAA][!!_Μáìи Мęйû_!!]</value>
+  </data>
+  <data name="NewHighScore" xml:space="preserve">
+    <value>[84513][!!_ÑÈẄ ΗĮĠΉ ŚĊÓŖĘ!_!!!!]</value>
+  </data>
+  <data name="Oops" xml:space="preserve">
+    <value>[55F4D][!!_ôóрš..._!!]</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>[2DB99][!!_ρàúşęđ_!!]</value>
+  </data>
+  <data name="PleaseRate" xml:space="preserve">
+    <value>[086D0][!!_Ðò ýõû éηјòў Мéмòѓÿ Ŝqµáѓéð? Рłêàśé ĝįνé µš 5 şţàѓŝ įи τнè Ŵîйđõŵş Рħôиê Âþρ şτóŕé!_!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="PreviousHighScore" xml:space="preserve">
+    <value>[80DF7][!!_Þѓęνįòùś Нìğн Şćóѓè_!!!!!!]</value>
+  </data>
+  <data name="QuestionsOrComments" xml:space="preserve">
+    <value>[69360][!!_Qúęŝţíòйš ôŕ Ćòммêйτš?_!!!!!!]</value>
+  </data>
+  <data name="RateApp" xml:space="preserve">
+    <value>[F4C96][!!_Ѓáτê Ãþρ_!!]</value>
+  </data>
+  <data name="ResumeGame" xml:space="preserve">
+    <value>[8288D][!!_Řęśûmê Ĝáмê_!!]</value>
+  </data>
+  <data name="SaveToLeaderboard" xml:space="preserve">
+    <value>[7D390][!!_Šáνę ťõ ĽéàðéřБõãŕđ_!!!!!!]</value>
+  </data>
+  <data name="SendFeedback" xml:space="preserve">
+    <value>[EA040][!!_Śęηđ ₣ęèðБàĉќ_!!]</value>
+  </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>[7603E][!!_Šτářţ Ĝâmê_!!]</value>
+  </data>
+  <data name="TapToResume" xml:space="preserve">
+    <value>[94A2C][!!_Тáρ ťħìş вôх ţó řêšûмę_!!!!!!]</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>[29C36][!!_Ťŕў Ãğáíη_!!]</value>
+  </data>
+  <data name="UponResuming" xml:space="preserve">
+    <value>[24698][!!_Ùþòη ѓéśµмįйģ, ẁê'ľĺ śнôẃ Уôµ τћê ľàŝť čômρľéťè şéqúêήĉé ţħáţ ẁãş êήτèŗèđ. Ţĥêη ўòù ċáή śтâѓт вý мàťčħįиğ τђâţ şêqúęηćę._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>[1AF2F][!!_Véŕşìôή_!!]</value>
+  </data>
+  <data name="WrongRectangle" xml:space="preserve">
+    <value>[EED48][!!_Ўóú τàþрèð τђé ẁŗôηĝ řêĉťâйĝľę_!!!!!!!!]</value>
+  </data>
+  <data name="YourScore" xml:space="preserve">
+    <value>[6DA7F][!!_Ϋõúŕ Şċòŕé_!!]</value>
+  </data>
+  <data name="YourTurn" xml:space="preserve">
+    <value>[A53D0][!!_ýõúŕ ťûŕй!_!!]</value>
+  </data>
+  <data name="YourTurnMessage" xml:space="preserve">
+    <value>[9ED85][!!_Íт'ŝ ŷôµŕ ťûřη τô мáťċĥ τнę şéqùêήĉè. Ţâþ ťĥę ѓęčţâήġļé ŷõú ĵûśτ šãẅ. Òηċè ýòµ ðô, ўõù'ļł šęę ťнè şâмę şêqµèйćè ðîšрľâУéđ âğãįи ẃîтђ óиę ãďðìтíóήáĺ ŗéčťáηģłê àðđęð ţó тћè ŝèqûéήĉę._!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>[536C7][!!_Àвõùτ_!!]</value>
+  </data>
+  <data name="EasyLower" xml:space="preserve">
+    <value>[CEE07][!!_èãšУ_!!]</value>
+  </data>
+  <data name="ErrorProcessingRequest" xml:space="preserve">
+    <value>[2F931][!!_Èřŕõѓ Þřòčèšşìйġ Ŕéqµęşτ_!!!!!!!!]</value>
+  </data>
+  <data name="ErrorRequestMessage" xml:space="preserve">
+    <value>[0E8E8][!!_Ţћéŕè ẁâś àή êřřôѓ ρŕòčèŝśįήğ ťħìŝ ѓêqµêšτ. Ŵôúłđ ÿôú łîќê ťô ŝęйđ ťĥê đèτáìłś тò τĥè ðêνèļòρèŗ τô ћęĺþ ĝéτ ţħìŝ ƒìхêď àŝ ŝôóи âš рôšŝįБĺê?_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="GameRectangleColor" xml:space="preserve">
+    <value>[C0B68][!!_Ġámé Ŗèćťáήģĺè Ĉôłõŗ_!!!!!!]</value>
+  </data>
+  <data name="GoodLuck" xml:space="preserve">
+    <value>[33992][!!_Ĝôôđ Ļúćķ!_!!]</value>
+  </data>
+  <data name="HardLower" xml:space="preserve">
+    <value>[D589C][!!_нãѓð_!!]</value>
+  </data>
+  <data name="InstructionsMessage" xml:space="preserve">
+    <value>[04374][!!_   Μêmôѓÿ Ŝqµàřêð įś á ĝàmè ťнãţ ẅìłļ тèŝţ ŷóûѓ męmõѓŷ! Τнè òьјęċτ óƒ тнè ĝáмę įš тô мâтĉĥ ťћé þãтτéřи ўóú śéę. Ŵħèη тħê ĝámè ьéġîήś, ýóú'ĺł şêê â ċõúйťďòẅη ƒřõм 3. Àƒтéŗ τђâţ, òηę řèċтàиģłę ẅíļļ ĺìġĥť ùþ. Тĥêή ìτ'ş ÿôµѓ ťùѓή ťô мáţčĥ ţнę рàττęѓи. Ŵћèи ýóµ тâр ţĥê ŕèčτàйģłè ťнàт ļíť ûþ, ýóù'ĺł šéê тћê śàмè řéĉтâиģĺè ĺîģћτ ùþ âğàįй ƒóĺĺóẃéð ъў õиê ŕáйďõм ŕêċťãйģľé - ţћęή ìť'š Уóûŕ τúŕй ãġàìη, âήď ŝó òй. Мàťĉн áś мâйў ãś ýôù ĉàй, ãηð àðď Уóùŕ şċòŗèš ţô τћê ļęàďęŗвóářđ! Şêê ẃĥó ćàή ĝèт ťћê ĥìğĥęşţ śĉóŕè Бêťẃèêη ŷóú àиð Уõúŕ ƒѓîêήďš!_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="InstructionsTitle" xml:space="preserve">
+    <value>[211F1][!!_ìиŝтŗùćťìôиş_!!]</value>
+  </data>
+  <data name="OptionsLower" xml:space="preserve">
+    <value>[5EBD3][!!_õртíóήŝ_!!]</value>
+  </data>
+  <data name="PurchaseSuccessful" xml:space="preserve">
+    <value>[19478][!!_Þúřĉĥàşê Śûċċéŝşƒµļ!_!!!!!!]</value>
+  </data>
+  <data name="RemoveAds" xml:space="preserve">
+    <value>[50C80][!!_Ŗêmòνę Ãđŝ_!!]</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>[9EC73][!!_Şùċćéŝś!_!!]</value>
+  </data>
+  <data name="UserRectangleColor" xml:space="preserve">
+    <value>[751D9][!!_Úśêѓ Ŗęċţàήğļè Čòłòŕ_!!!!!!]</value>
+  </data>
+  <data name="LangRegionNameEnUs" xml:space="preserve">
+    <value>[90862][!!_Èиĝĺįşħ, Úηìτêď Ŝτàτęŝ_!!!!!!]</value>
+  </data>
+  <data name="LangRegionNameEsES" xml:space="preserve">
+    <value>[C6EBE][!!_Śρãήìśћ, Šрâîи_!!!!]</value>
+  </data>
+  <data name="ErrorLastTimeMessage" xml:space="preserve">
+    <value>[695B1][!!_À þŗòьĺêm òċćúŗŗèđ ţĥè ĺãšţ τìmè ýóú ŕâй ţħîś âρρľíċâţįóή. Ẃòùĺð ŷôû ĺįкè τõ şèйđ ãη éмâíł тò ŗèρòŕτ ìт?_!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]</value>
+  </data>
+  <data name="ErrorReport" xml:space="preserve">
+    <value>[79900][!!_Êѓѓóř Ŗęрôřţ_!!]</value>
+  </data>
+</root>

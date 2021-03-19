@@ -1,0 +1,47 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BeerTrends.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:fb="clr-namespace:Facebook.Client.Controls;assembly=Facebook.Client"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#F1BE00">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="1" Margin="12">
+            <TextBlock Text="welcome to" HorizontalAlignment="Center" Margin="0" FontSize="32"/>
+            <TextBlock Text="BEER" HorizontalAlignment="Center" Margin="0 -40" FontSize="100" FontFamily="/Assets/Fonts/MULLET.TTF#Mullet"/>
+            <TextBlock Text="TRENDS" HorizontalAlignment="Center" Margin="0 -40" FontSize="120" FontFamily="/Assets/Fonts/MULLET.TTF#Mullet"/>
+            <TextBlock Text="Please sign in or create an account to get started" HorizontalAlignment="Center" Margin="0 30 0 0" />
+            <toolkit:PhoneTextBox x:Name="txtEmail" Hint="email" />
+
+            <!--PASSWORD FIX SINCE I CAN'T PUT PLACEHOLDER TEXT IN-->
+            <TextBox x:Name="PasswordWatermark" 
+                     TextWrapping="Wrap" 
+                     Text="password" 
+                     Foreground="{StaticResource PhoneTextBoxReadOnlyBrush}" 
+                     GotFocus="PasswordGotFocus"/>
+            <PasswordBox x:Name="txtPassword" Visibility="Collapsed" LostFocus="PasswordLostFocus" />
+            
+            <Button x:Name="btnLogin" Content="Login"/>
+            <TextBlock Text="New to Beer Trends? Choose one of the options below to get started!" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="0 15"/>
+            <Button x:Name="btnNew" Content="Sign up with Email"/>
+            <Button x:Name="btnFacebook" Content="Login with Facebook"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

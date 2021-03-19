@@ -1,0 +1,164 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MemorySquared.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height="80" x:Name="AdRow"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".1*" />
+            <ColumnDefinition Width=".4*" />
+            <ColumnDefinition Width=".4*" />
+            <ColumnDefinition Width=".1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="GameGrid" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".22*" />
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".22*" />
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".22*" />
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".22*" />
+                <RowDefinition Height=".02*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".02*" />
+                <ColumnDefinition Width=".47*" />
+                <ColumnDefinition Width=".02*" />
+                <ColumnDefinition Width=".47*" />
+                <ColumnDefinition Width=".02*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Storyboard x:Name="sbGame">
+                    <ColorAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)"
+                                AutoReverse="True">
+                        <EasingColorKeyFrame KeyTime="00:00:0" Value="Black" x:Name="GameRectFromColor" />
+                        <EasingColorKeyFrame KeyTime="00:00:0.5" x:Name="efGameColor" />
+                    </ColorAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Name="sbUser">
+                    <ColorAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)"
+                                AutoReverse="False">
+                        <EasingColorKeyFrame KeyTime="00:00:0" x:Name="efUserColor" />
+                        <EasingColorKeyFrame KeyTime="00:00:0.1" Value="Black" x:Name="UserRectToColor" />
+                    </ColorAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Name="sbHardRectRemover">
+                    <ColorAnimationUsingKeyFrames x:Name="sbHardRectRemoverAnimation"
+                                Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)"
+                                AutoReverse="False">
+                        <EasingColorKeyFrame KeyTime="00:00:0" x:Name="HardRectToRemoveStartColor"/>
+                        <EasingColorKeyFrame KeyTime="00:00:0.5" x:Name="HardRectToRemoveEndColor"/>
+                    </ColorAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Name="sbResume">
+                    <DoubleAnimation
+                            x:Name="hidePauseGrid"
+                            Storyboard.TargetProperty="Opacity"
+                            BeginTime="00:00:00"
+                            From="1.0"
+                            To="0.0"
+                            Duration="0:0:0.5">
+                    </DoubleAnimation>
+                </Storyboard>
+                <Storyboard x:Name="sbContinue">
+                    <DoubleAnimation
+                            x:Name="hideMessageCanvas"
+                            Storyboard.TargetProperty="Opacity"
+                            BeginTime="00:00:00"
+                            From="1.0"
+                            To="0.0"
+                            Duration="0:0:0.5">
+                    </DoubleAnimation>
+                </Storyboard>
+
+                <!--STYLES FOR DARK THEME-->
+                <Style x:Key="DarkRectangleStyle" x:Name="DarkRectangleStyle" TargetType="Rectangle">
+                    <Setter Property="Fill" Value="Black" />
+                </Style>
+                <Style x:Key="DarkBorderStyle" x:Name="DarkBorderStyle" TargetType="Border">
+                    <Setter Property="BorderBrush" Value="White" />
+                    <Setter Property="BorderThickness" Value="1" />
+                </Style>
+
+                <!--STYLES FOR LIGHT THEME-->
+                <Style x:Key="LightRectangleStyle" x:Name="LightRectangleStyle" TargetType="Rectangle">
+                    <Setter Property="Fill" Value="Transparent" />
+                </Style>
+                <Style x:Key="LightBorderStyle" x:Name="LightBorderStyle" TargetType="Border">
+                    <Setter Property="BorderBrush" Value="Black" />
+                    <Setter Property="BorderThickness" Value="1" />
+                </Style>
+
+            </Grid.Resources>
+
+            <Border x:Name="Border7" Style="{StaticResource DarkBorderStyle}" Grid.Row="1" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1" >
+                <Rectangle x:Name="Rect7" Tag="7" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border8" Style="{StaticResource DarkBorderStyle}" Grid.Row="1" Grid.RowSpan="1" Grid.Column="3" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect8" Tag="8" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border1" Style="{StaticResource DarkBorderStyle}" Grid.Row="3" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect1" Tag="1" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border2" Style="{StaticResource DarkBorderStyle}" Grid.Row="3" Grid.RowSpan="1" Grid.Column="3" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect2" Tag="2" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border3" Style="{StaticResource DarkBorderStyle}" Grid.Row="5" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect3" Tag="3" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border4" Style="{StaticResource DarkBorderStyle}" Grid.Row="5" Grid.RowSpan="1" Grid.Column="3" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect4" Tag="4" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border5" Style="{StaticResource DarkBorderStyle}" Grid.Row="7" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect5" Tag="5" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+            <Border x:Name="Border6" Style="{StaticResource DarkBorderStyle}" Grid.Row="7" Grid.RowSpan="1" Grid.Column="3" Grid.ColumnSpan="1">
+                <Rectangle x:Name="Rect6" Tag="6" Style="{StaticResource DarkRectangleStyle}" Tap="Rectangle_Tap"/>
+            </Border>
+
+            <TextBlock x:Name="lblCountdown" FontSize="250" Grid.Row="0" Grid.RowSpan="9" Grid.Column="0" Grid.ColumnSpan="5" TextAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed"/>
+                        
+        </Grid>
+        
+        <Grid x:Name="MessageGrid" Background="{StaticResource PhoneAccentBrush}" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height=".7*" />
+                <RowDefinition Height=".1*" />
+            </Grid.RowDefinitions>
+                
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".05*"/>
+                <ColumnDefinition Width=".45*"/>
+                <ColumnDefinition Width=".45*"/>
+                <ColumnDefinition Width=".05*"/>
+            </Grid.ColumnDefinitions>
+                
+            <TextBlock x:Name="MessageHeader" Grid.Row="0" Grid.ColumnSpan="4" FontSize="70" TextAlignment="Center" Foreground="White"/>
+            <TextBlock x:Name="MessageContent" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping="Wrap" FontSize="30" Foreground="White"/>
+            <TextBlock x:Name="MessageFooter" Grid.Row="2" Grid.ColumnSpan="4" TextAlignment="Center" Foreground="White"/>
+                
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,43 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MemorySquared.Instructions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80" x:Name="AdRow"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.InstructionsTitle, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="InstructionsGrid" Grid.Row="1" Margin="12">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.RowSpan="3" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.InstructionsMessage, Source={StaticResource LocalizedStrings}}"/>
+            <TextBlock TextAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Text="{Binding Path=LocalizedResources.GoodLuck, Source={StaticResource LocalizedStrings}}" />
+            
+        </Grid>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

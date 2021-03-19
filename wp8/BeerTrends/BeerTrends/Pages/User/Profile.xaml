@@ -1,0 +1,90 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BeerTrends.Pages.User.Profile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#F1BE00">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12">
+            <TextBlock x:Name="lblName" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".3*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height=".15*"/>
+                <RowDefinition Height=".15*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--THUMBNAIL /  DISCOVERED COUNT-->
+            <Border Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Margin="20 0" BorderBrush="Black" BorderThickness="5">
+                <Image x:Name="imgThumbnail" Stretch="UniformToFill">
+                    <toolkit:ContextMenuService.ContextMenu>
+                        <toolkit:ContextMenu IsZoomEnabled="false" x:Name="imgMenu">
+                            <toolkit:MenuItem Header="choose picture from existing" Click="ChangePicture" Foreground="Black"/>
+                        </toolkit:ContextMenu>
+                    </toolkit:ContextMenuService.ContextMenu>
+                </Image>
+            </Border>
+            
+            <!--DISCOVERED COUNT-->
+            <TextBlock x:Name="lblDiscoveredCount" Text="9" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="42"/>
+
+            <!--TOTAL BEERS DRANK-->
+            <TextBlock x:Name="lblTotalBeersDrank" Text="Total Beers Drank: 79" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+            
+            <!--FOLLOWING-->
+            <TextBlock x:Name="lblFollowing" Text="Following: 37" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
+
+            <!--FOLLOWERS-->
+            <TextBlock x:Name="lblFollowers" Text="Followers: 12" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+
+            <!--FAVORITES-->
+            <TextBlock x:Name="lblFavorites" Text="Favorites: 88" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"/>
+
+            <!--NAME-->
+            <TextBlock x:Name="lblDisplayName" Text="lhan16 (Lincoln, Nebraska)" Grid.Row="5" Grid.ColumnSpan="2" />
+            
+            <!--LOCATION-->
+            <!--<TextBlock x:Name="lblLocation" Text="Lincoln, NE" Grid.Row="5" Grid.ColumnSpan="2" TextAlignment="Right"/>-->
+            
+            <!--BIO-->
+            <TextBlock x:Name="lblBio" Text="I love to drink beer!" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2" TextWrapping="Wrap" />
+            
+            
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

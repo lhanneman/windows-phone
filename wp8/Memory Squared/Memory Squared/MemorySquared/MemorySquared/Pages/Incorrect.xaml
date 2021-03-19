@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MemorySquared.Incorrect"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80" x:Name="AdRow"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.Oops, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="IncorrectGrid" Grid.Row="1" Margin="12">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".15*" />
+                <ColumnDefinition Width=".1*" />
+                <ColumnDefinition Width=".40*" />
+                <ColumnDefinition Width=".1*" />
+                <ColumnDefinition Width=".15*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding Path=LocalizedResources.WrongRectangle, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Center" TextAlignment="Center" FontSize="20"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"/>
+            <TextBlock x:Name="lblNewHighScore" Text="{Binding Path=LocalizedResources.NewHighScore, Source={StaticResource LocalizedStrings}}" TextAlignment="Center" FontSize="32" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Visibility="Collapsed"/>
+            <TextBlock x:Name="lblYourScore" VerticalAlignment="Center" TextAlignment="Left" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" />
+            <TextBlock x:Name="lblPreviousHighScore" TextAlignment="Left" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" />
+            <Button x:Name="btnAddScore" Content="{Binding Path=LocalizedResources.AddToLeaderboard, Source={StaticResource LocalizedStrings}}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Visibility="Collapsed"/>
+            <Button x:Name="btnTryAgain" Content="{Binding Path=LocalizedResources.TryAgain, Source={StaticResource LocalizedStrings}}" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" />
+            <Button x:Name="btnMainMenu" Content="{Binding Path=LocalizedResources.MainMenuButton, Source={StaticResource LocalizedStrings}}" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3"/>
+            
+        </Grid>
+
+        <Canvas x:Name="AdCanvas" Grid.Row="2" />
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

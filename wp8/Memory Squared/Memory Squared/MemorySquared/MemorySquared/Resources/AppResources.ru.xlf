@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ru" original="AppResources.resx" tool-id="MultilingualAppToolkit" product-name="MemorySquared" product-version="1.0.1.0" build-num="1">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="2.2.1212.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+          
+        <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note></trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">ru</target>
+          
+        <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note></trans-unit>
+        <trans-unit id="Resx/ApplicationTitle" translate="yes" xml:space="preserve">
+          <source>MEMORY SQUARED</source>
+          <target state="new">MEMORY SQUARED</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppBarButtonText" translate="yes" xml:space="preserve">
+          <source>add</source>
+          <target state="new">add</target>
+        </trans-unit>
+        <trans-unit id="Resx/AppBarMenuItemText" translate="yes" xml:space="preserve">
+          <source>Menu Item</source>
+          <target state="new">Menu Item</target>
+        </trans-unit>
+        <trans-unit id="Resx/Instructions" translate="yes" xml:space="preserve">
+          <source>Instructions</source>
+          <target state="new">Instructions</target>
+        </trans-unit>
+        <trans-unit id="Resx/MainMenu" translate="yes" xml:space="preserve">
+          <source>main menu</source>
+          <target state="new">main menu</target>
+        </trans-unit>
+        <trans-unit id="Resx/Options" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="new">Options</target>
+        </trans-unit>
+        <trans-unit id="Resx/ViewLeaderboard" translate="yes" xml:space="preserve">
+          <source>View Leaderboard</source>
+          <target state="new">View Leaderboard</target>
+        </trans-unit>
+        <trans-unit id="Resx/AboutLower" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="new">about</target>
+        </trans-unit>
+        <trans-unit id="Resx/AddName" translate="yes" xml:space="preserve">
+          <source>add name</source>
+          <target state="new">add name</target>
+        </trans-unit>
+        <trans-unit id="Resx/AddToLeaderboard" translate="yes" xml:space="preserve">
+          <source>Add to Leaderboard</source>
+          <target state="new">Add to Leaderboard</target>
+        </trans-unit>
+        <trans-unit id="Resx/ChooseMode" translate="yes" xml:space="preserve">
+          <source>choose mode</source>
+          <target state="new">choose mode</target>
+        </trans-unit>
+        <trans-unit id="Resx/DisablePopup" translate="yes" xml:space="preserve">
+          <source>Disable this popup in the Options menu</source>
+          <target state="new">Disable this popup in the Options menu</target>
+        </trans-unit>
+        <trans-unit id="Resx/Easy" translate="yes" xml:space="preserve">
+          <source>Easy</source>
+          <target state="new">Easy</target>
+        </trans-unit>
+        <trans-unit id="Resx/Hard" translate="yes" xml:space="preserve">
+          <source>Hard</source>
+          <target state="new">Hard</target>
+        </trans-unit>
+        <trans-unit id="Resx/HighScoreEasy" translate="yes" xml:space="preserve">
+          <source>High Score (Easy)</source>
+          <target state="new">High Score (Easy)</target>
+        </trans-unit>
+        <trans-unit id="Resx/HighScoreHard" translate="yes" xml:space="preserve">
+          <source>High Score (Hard)</source>
+          <target state="new">High Score (Hard)</target>
+        </trans-unit>
+        <trans-unit id="Resx/MainMenuButton" translate="yes" xml:space="preserve">
+          <source>Main Menu</source>
+          <target state="new">Main Menu</target>
+        </trans-unit>
+        <trans-unit id="Resx/NewHighScore" translate="yes" xml:space="preserve">
+          <source>NEW HIGH SCORE!</source>
+          <target state="new">NEW HIGH SCORE!</target>
+        </trans-unit>
+        <trans-unit id="Resx/Oops" translate="yes" xml:space="preserve">
+          <source>oops...</source>
+          <target state="new">oops...</target>
+        </trans-unit>
+        <trans-unit id="Resx/Paused" translate="yes" xml:space="preserve">
+          <source>paused</source>
+          <target state="new">paused</target>
+        </trans-unit>
+        <trans-unit id="Resx/PleaseRate" translate="yes" xml:space="preserve">
+          <source>Do you enjoy Memory Squared? Please give us 5 stars in the Windows Phone App store!</source>
+          <target state="new">Do you enjoy Memory Squared? Please give us 5 stars in the Windows Phone App store!</target>
+        </trans-unit>
+        <trans-unit id="Resx/PreviousHighScore" translate="yes" xml:space="preserve">
+          <source>Previous High Score</source>
+          <target state="new">Previous High Score</target>
+        </trans-unit>
+        <trans-unit id="Resx/QuestionsOrComments" translate="yes" xml:space="preserve">
+          <source>Questions or Comments?</source>
+          <target state="new">Questions or Comments?</target>
+        </trans-unit>
+        <trans-unit id="Resx/RateApp" translate="yes" xml:space="preserve">
+          <source>Rate App</source>
+          <target state="new">Rate App</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResumeGame" translate="yes" xml:space="preserve">
+          <source>Resume Game</source>
+          <target state="new">Resume Game</target>
+        </trans-unit>
+        <trans-unit id="Resx/SaveToLeaderboard" translate="yes" xml:space="preserve">
+          <source>Save to Leaderboard</source>
+          <target state="new">Save to Leaderboard</target>
+        </trans-unit>
+        <trans-unit id="Resx/SendFeedback" translate="yes" xml:space="preserve">
+          <source>Send Feedback</source>
+          <target state="new">Send Feedback</target>
+        </trans-unit>
+        <trans-unit id="Resx/StartGame" translate="yes" xml:space="preserve">
+          <source>Start Game</source>
+          <target state="new">Start Game</target>
+        </trans-unit>
+        <trans-unit id="Resx/TapToResume" translate="yes" xml:space="preserve">
+          <source>Tap this box to resume</source>
+          <target state="new">Tap this box to resume</target>
+        </trans-unit>
+        <trans-unit id="Resx/TryAgain" translate="yes" xml:space="preserve">
+          <source>Try Again</source>
+          <target state="new">Try Again</target>
+        </trans-unit>
+        <trans-unit id="Resx/UponResuming" translate="yes" xml:space="preserve">
+          <source>Upon resuming, we'll show you the last complete sequence that was entered. Then you can start by matching that sequence.</source>
+          <target state="new">Upon resuming, we'll show you the last complete sequence that was entered. Then you can start by matching that sequence.</target>
+        </trans-unit>
+        <trans-unit id="Resx/Version" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="new">Version</target>
+        </trans-unit>
+        <trans-unit id="Resx/WrongRectangle" translate="yes" xml:space="preserve">
+          <source>You tapped the wrong rectangle</source>
+          <target state="new">You tapped the wrong rectangle</target>
+        </trans-unit>
+        <trans-unit id="Resx/YourScore" translate="yes" xml:space="preserve">
+          <source>Your Score</source>
+          <target state="new">Your Score</target>
+        </trans-unit>
+        <trans-unit id="Resx/YourTurn" translate="yes" xml:space="preserve">
+          <source>your turn!</source>
+          <target state="new">your turn!</target>
+        </trans-unit>
+        <trans-unit id="Resx/YourTurnMessage" translate="yes" xml:space="preserve">
+          <source>It's your turn to match the sequence. Tap the rectangle you just saw. Once you do, you'll see the same sequence displayed again with one additional rectangle added to the sequence.</source>
+          <target state="new">It's your turn to match the sequence. Tap the rectangle you just saw. Once you do, you'll see the same sequence displayed again with one additional rectangle added to the sequence.</target>
+        </trans-unit>
+        <trans-unit id="Resx/About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="Resx/EasyLower" translate="yes" xml:space="preserve">
+          <source>easy</source>
+          <target state="new">easy</target>
+        </trans-unit>
+        <trans-unit id="Resx/ErrorProcessingRequest" translate="yes" xml:space="preserve">
+          <source>Error Processing Request</source>
+          <target state="new">Error Processing Request</target>
+        </trans-unit>
+        <trans-unit id="Resx/ErrorRequestMessage" translate="yes" xml:space="preserve">
+          <source>There was an error processing this request. Would you like to send the details to the developer to help get this fixed as soon as possible?</source>
+          <target state="new">There was an error processing this request. Would you like to send the details to the developer to help get this fixed as soon as possible?</target>
+        </trans-unit>
+        <trans-unit id="Resx/GameRectangleColor" translate="yes" xml:space="preserve">
+          <source>Game Rectangle Color</source>
+          <target state="new">Game Rectangle Color</target>
+        </trans-unit>
+        <trans-unit id="Resx/GoodLuck" translate="yes" xml:space="preserve">
+          <source>Good Luck!</source>
+          <target state="new">Good Luck!</target>
+        </trans-unit>
+        <trans-unit id="Resx/HardLower" translate="yes" xml:space="preserve">
+          <source>hard</source>
+          <target state="new">hard</target>
+        </trans-unit>
+        <trans-unit id="Resx/InstructionsMessage" translate="yes" xml:space="preserve">
+          <source>   Memory Squared is a game that will test your memory! The object of the game is to match the pattern you see. When the game begins, you'll see a countdown from 3. After that, one rectangle will light up. Then it's your turn to match the pattern. When you tap the rectangle that lit up, you'll see the same rectangle light up again followed by one random rectangle - then it's your turn again, and so on. Match as many as you can, and add your scores to the leaderboard! See who can get the highest score between you and your friends!</source>
+          <target state="new">   Memory Squared is a game that will test your memory! The object of the game is to match the pattern you see. When the game begins, you'll see a countdown from 3. After that, one rectangle will light up. Then it's your turn to match the pattern. When you tap the rectangle that lit up, you'll see the same rectangle light up again followed by one random rectangle - then it's your turn again, and so on. Match as many as you can, and add your scores to the leaderboard! See who can get the highest score between you and your friends!</target>
+        </trans-unit>
+        <trans-unit id="Resx/InstructionsTitle" translate="yes" xml:space="preserve">
+          <source>instructions</source>
+          <target state="new">instructions</target>
+        </trans-unit>
+        <trans-unit id="Resx/OptionsLower" translate="yes" xml:space="preserve">
+          <source>options</source>
+          <target state="new">options</target>
+        </trans-unit>
+        <trans-unit id="Resx/PurchaseSuccessful" translate="yes" xml:space="preserve">
+          <source>Purchase Successful!</source>
+          <target state="new">Purchase Successful!</target>
+        </trans-unit>
+        <trans-unit id="Resx/RemoveAds" translate="yes" xml:space="preserve">
+          <source>Remove Ads</source>
+          <target state="new">Remove Ads</target>
+        </trans-unit>
+        <trans-unit id="Resx/Success" translate="yes" xml:space="preserve">
+          <source>Success!</source>
+          <target state="new">Success!</target>
+        </trans-unit>
+        <trans-unit id="Resx/UserRectangleColor" translate="yes" xml:space="preserve">
+          <source>User Rectangle Color</source>
+          <target state="new">User Rectangle Color</target>
+        </trans-unit>
+        <trans-unit id="Resx/SequenceStartPrompt" translate="yes" xml:space="preserve">
+          <source>Prompt on sequence start</source>
+          <target state="new">Prompt on sequence start</target>
+        </trans-unit>
+        <trans-unit id="Resx/LangRegionNameEnUs" translate="yes" xml:space="preserve">
+          <source>English, United States</source>
+          <target state="new">English, United States</target>
+        </trans-unit>
+        <trans-unit id="Resx/LangRegionNameEsES" translate="yes" xml:space="preserve">
+          <source>Spanish, Spain</source>
+          <target state="new">Spanish, Spain</target>
+        </trans-unit>
+        <trans-unit id="Resx/ErrorLastTimeMessage" translate="yes" xml:space="preserve">
+          <source>A problem occurred the last time you ran this application. Would you like to send an email to report it?</source>
+          <target state="new">A problem occurred the last time you ran this application. Would you like to send an email to report it?</target>
+        </trans-unit>
+        <trans-unit id="Resx/ErrorReport" translate="yes" xml:space="preserve">
+          <source>Error Report</source>
+          <target state="new">Error Report</target>
+        </trans-unit>
+        <trans-unit id="Resx/Current" translate="yes" xml:space="preserve">
+          <source>Current: </source>
+          <target state="new">Current: </target>
+        </trans-unit>
+        <trans-unit id="Resx/UseLightTheme" translate="yes" xml:space="preserve">
+          <source>Use light theme</source>
+          <target state="new">Use light theme</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es" original="AppResources.resx" tool-id="MultilingualAppToolkit" product-name="MemorySquared" product-version="1.0.1.0" build-num="1">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="2.2.1212.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit translate="yes" id="Resx/ResourceFlowDirection" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+          
+        <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note></trans-unit>
+        <trans-unit translate="yes" id="Resx/ResourceLanguage" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">es</target>
+          
+        <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note></trans-unit>
+        <trans-unit translate="yes" id="Resx/ApplicationTitle" xml:space="preserve">
+          <source>MEMORY SQUARED</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">MEMORIA AL CUADRADO</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/AppBarButtonText" xml:space="preserve">
+          <source>add</source>
+          <target state="translated">añadir</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/AppBarMenuItemText" xml:space="preserve">
+          <source>Menu Item</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Elemento de menú</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Instructions" xml:space="preserve">
+          <source>Instructions</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Instrucciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/MainMenu" xml:space="preserve">
+          <source>main menu</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">menú principal</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Options" xml:space="preserve">
+          <source>Options</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ViewLeaderboard" xml:space="preserve">
+          <source>View Leaderboard</source>
+          <target state="translated">Ver tabla de posiciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/AboutLower" xml:space="preserve">
+          <source>about</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">acerca de</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/AddName" xml:space="preserve">
+          <source>add name</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Agregar nombre</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/AddToLeaderboard" xml:space="preserve">
+          <source>Add to Leaderboard</source>
+          <target state="translated">Añadir a la tabla de posiciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ChooseMode" xml:space="preserve">
+          <source>choose mode</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Elija el modo de</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/DisablePopup" xml:space="preserve">
+          <source>Disable this popup in the Options menu</source>
+          <target state="translated">Desactivar este mensaje en el menú de opciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Easy" xml:space="preserve">
+          <source>Easy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Fácil</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Hard" xml:space="preserve">
+          <source>Hard</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Duro</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/HighScoreEasy" xml:space="preserve">
+          <source>High Score (Easy)</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Puntuación más alta (fácil)</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/HighScoreHard" xml:space="preserve">
+          <source>High Score (Hard)</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Puntuación más alta (disco duro)</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/MainMenuButton" xml:space="preserve">
+          <source>Main Menu</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Menú principal</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/NewHighScore" xml:space="preserve">
+          <source>NEW HIGH SCORE!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">NUEVA PUNTUACIÓN MÁS ALTA!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Oops" xml:space="preserve">
+          <source>oops...</source>
+          <target state="translated">Uy...</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Paused" xml:space="preserve">
+          <source>paused</source>
+          <target state="translated">pausa</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/PleaseRate" xml:space="preserve">
+          <source>Do you enjoy Memory Squared? Please give us 5 stars in the Windows Phone App store!</source>
+          <target state="translated">¿Le gusta este juego? Por favor dénos 5 estrellas en la tienda de aplicaciones de Windows Phone!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/PreviousHighScore" xml:space="preserve">
+          <source>Previous High Score</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Récord anterior</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/QuestionsOrComments" xml:space="preserve">
+          <source>Questions or Comments?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">¿Preguntas o comentarios?</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/RateApp" xml:space="preserve">
+          <source>Rate App</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Aplicación de tasa</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ResumeGame" xml:space="preserve">
+          <source>Resume Game</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Reanudar la partida</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/SaveToLeaderboard" xml:space="preserve">
+          <source>Save to Leaderboard</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Guardar en tabla de posiciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/SendFeedback" xml:space="preserve">
+          <source>Send Feedback</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Enviar comentarios</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/StartGame" xml:space="preserve">
+          <source>Start Game</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Iniciar juego</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/TapToResume" xml:space="preserve">
+          <source>Tap this box to resume</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Grifo esta casilla para reanudar</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/TryAgain" xml:space="preserve">
+          <source>Try Again</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Vuelve a intentarlo</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/UponResuming" xml:space="preserve">
+          <source>Upon resuming, we'll show you the last complete sequence that was entered. Then you can start by matching that sequence.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tras la reanudación, le mostraremos la última secuencia completa que se ha introducido. Entonces puedes empezar haciendo coincidir esa secuencia.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Version" xml:space="preserve">
+          <source>Version</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Versión</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/WrongRectangle" xml:space="preserve">
+          <source>You tapped the wrong rectangle</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Golpeó el rectángulo mal</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/YourScore" xml:space="preserve">
+          <source>Your Score</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Tu puntuación</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/YourTurn" xml:space="preserve">
+          <source>your turn!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">es tu turno!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/YourTurnMessage" xml:space="preserve">
+          <source>It's your turn to match the sequence. Tap the rectangle you just saw. Once you do, you'll see the same sequence displayed again with one additional rectangle added to the sequence.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Es tu turno para que coincida con la secuencia. Puntee en el rectángulo que acabas de ver. Una vez que lo haces, verás la misma secuencia que aparece de nuevo con un rectángulo adicional agregado a la secuencia.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/About" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Acerca de</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/EasyLower" xml:space="preserve">
+          <source>easy</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">fácil</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ErrorProcessingRequest" xml:space="preserve">
+          <source>Error Processing Request</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Solicitud de procesamiento de error</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ErrorRequestMessage" xml:space="preserve">
+          <source>There was an error processing this request. Would you like to send the details to the developer to help get this fixed as soon as possible?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Hubo un error al procesar esta solicitud. ¿Quieres enviar los detalles al desarrollador para ayudar a arreglar esto tan pronto como sea posible.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/GameRectangleColor" xml:space="preserve">
+          <source>Game Rectangle Color</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Color del rectángulo de juego</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/GoodLuck" xml:space="preserve">
+          <source>Good Luck!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">¡Buena suerte!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/HardLower" xml:space="preserve">
+          <source>hard</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">duro</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/InstructionsMessage" xml:space="preserve">
+          <source>   Memory Squared is a game that will test your memory! The object of the game is to match the pattern you see. When the game begins, you'll see a countdown from 3. After that, one rectangle will light up. Then it's your turn to match the pattern. When you tap the rectangle that lit up, you'll see the same rectangle light up again followed by one random rectangle - then it's your turn again, and so on. Match as many as you can, and add your scores to the leaderboard! See who can get the highest score between you and your friends!</source>
+          <target state="translated">   Memoria Squared es un juego que pondrá a prueba tu memoria! El objetivo del juego es para que coincida con el patrón que se ve. Cuando comienza el juego, verás una cuenta atrás de 3. Después de eso, un rectángulo cambiará de color. Entonces es tu turno para que coincida con el patrón. Después de tocar el rectángulo que cambia de color, el mismo rectángulo cambiará de color de nuevo, seguido de un rectángulo al azar - entonces es su turno de nuevo, y así sucesivamente. Partido tantos rectángulos como puedas, y añadir sus puntuaciones a la clasificación! Vea quién puede conseguir la mayor puntuación entre usted y sus amigos!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/InstructionsTitle" xml:space="preserve">
+          <source>instructions</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">instrucciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/OptionsLower" xml:space="preserve">
+          <source>options</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Opciones</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/PurchaseSuccessful" xml:space="preserve">
+          <source>Purchase Successful!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Compra exitosa!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/RemoveAds" xml:space="preserve">
+          <source>Remove Ads</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Eliminar anuncios</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Success" xml:space="preserve">
+          <source>Success!</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">¡ Un éxito!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/UserRectangleColor" xml:space="preserve">
+          <source>User Rectangle Color</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Usuario rectángulo Color</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/SequenceStartPrompt" xml:space="preserve">
+          <source>Prompt on sequence start</source>
+          <target state="translated">mostrará un mensaje cuando el juego comienza</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/LangRegionNameEnUs" xml:space="preserve">
+          <source>English, United States</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Inglés, Estados Unidos</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/LangRegionNameEsES" xml:space="preserve">
+          <source>Spanish, Spain</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Español, España</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ErrorLastTimeMessage" xml:space="preserve">
+          <source>A problem occurred the last time you ran this application. Would you like to send an email to report it?</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">La última vez que corrió esta aplicación se produjo un problema. ¿Quieres enviar un correo electrónico a denunciarlo?</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/ErrorReport" xml:space="preserve">
+          <source>Error Report</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Informe de errores</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/Current" xml:space="preserve">
+          <source>Current: </source>
+          <target state="translated">corriente: </target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resx/UseLightTheme" xml:space="preserve">
+          <source>Use light theme</source>
+          <target state="translated">utilizar el tema luz</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

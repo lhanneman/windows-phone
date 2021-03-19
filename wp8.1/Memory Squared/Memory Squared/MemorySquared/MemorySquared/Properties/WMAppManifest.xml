@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{a304eb29-db74-467e-8ea1-a0ac4b0eef2b}" Title="Memory Squared" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="Lloyd Hanneman" Description="Memory Squared is a pattern-matching memory game." Publisher="MemorySquared" PublisherID="{b2fbe965-9b03-4b55-9a37-d7d2e7a57d52}">
+    <IconPath IsRelative="true" IsResource="false">Assets\icon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Pages/Menu.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MemorySquaredToken" TaskName="_default">
+        <TemplateIconic>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\smalltilelogo.png</SmallImageURI>
+          <Count>0</Count>
+          <IconImageURI IsRelative="true" IsResource="false">Assets\Tiles\mediumtileplustitle.png</IconImageURI>
+          <Title></Title>
+          <!--<BackgroundColor>#28A9E2</BackgroundColor>-->
+          <!--light blue from splash screen-->
+          <DeviceLockImageURI></DeviceLockImageURI>
+        </TemplateIconic>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

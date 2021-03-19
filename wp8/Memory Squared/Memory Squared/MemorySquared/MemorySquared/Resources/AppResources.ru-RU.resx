@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>ru-RU</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>ПАМЯТЬ В КВАДРАТЕ</value>
+  </data>
+  <data name="AppBarButtonText" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AppBarMenuItemText" xml:space="preserve">
+    <value>Пункт меню</value>
+  </data>
+  <data name="Instructions" xml:space="preserve">
+    <value>Инструкции</value>
+  </data>
+  <data name="MainMenu" xml:space="preserve">
+    <value>Главное меню</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="ViewLeaderboard" xml:space="preserve">
+    <value>Просмотр таблицы лидеров</value>
+  </data>
+  <data name="AboutLower" xml:space="preserve">
+    <value>о</value>
+  </data>
+  <data name="AddName" xml:space="preserve">
+    <value>Укажите свое имя</value>
+  </data>
+  <data name="AddToLeaderboard" xml:space="preserve">
+    <value>Добавить в список лидеров</value>
+  </data>
+  <data name="ChooseMode" xml:space="preserve">
+    <value>выбрать сложность игры</value>
+  </data>
+  <data name="DisablePopup" xml:space="preserve">
+    <value>Отключить это всплывающее меню «Параметры»</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>Легко</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Жесткий</value>
+  </data>
+  <data name="HighScoreEasy" xml:space="preserve">
+    <value>Лучший результат (легко)</value>
+  </data>
+  <data name="HighScoreHard" xml:space="preserve">
+    <value>Лучший результат (трудный)</value>
+  </data>
+  <data name="MainMenuButton" xml:space="preserve">
+    <value>Главное меню</value>
+  </data>
+  <data name="NewHighScore" xml:space="preserve">
+    <value>НОВЫЙ ВЫСОКИЙ БАЛЛ!</value>
+  </data>
+  <data name="Oops" xml:space="preserve">
+    <value>упс ...</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>приостановлено</value>
+  </data>
+  <data name="PleaseRate" xml:space="preserve">
+    <value>Нравится ли вам эта игра? Пожалуйста, дайте нам 5 звезд в магазине приложений для Windows Phone!</value>
+  </data>
+  <data name="PreviousHighScore" xml:space="preserve">
+    <value>Предыдущий высокий балл</value>
+  </data>
+  <data name="QuestionsOrComments" xml:space="preserve">
+    <value>Вопросы или комментарии?</value>
+  </data>
+  <data name="RateApp" xml:space="preserve">
+    <value>Рейтинг этой игры</value>
+  </data>
+  <data name="ResumeGame" xml:space="preserve">
+    <value>Возобновить игру</value>
+  </data>
+  <data name="SaveToLeaderboard" xml:space="preserve">
+    <value>Сохранить в таблицу лидеров</value>
+  </data>
+  <data name="SendFeedback" xml:space="preserve">
+    <value>Отправить отзыв</value>
+  </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>Начать игру</value>
+  </data>
+  <data name="TapToResume" xml:space="preserve">
+    <value>Нажмите здесь, чтобы продолжить</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Повторить</value>
+  </data>
+  <data name="UponResuming" xml:space="preserve">
+    <value>После возобновления, мы покажем вам последний полная последовательность, который был введен. Затем вы можете начать путем сопоставления этой последовательности.</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="WrongRectangle" xml:space="preserve">
+    <value>Вы затронули неправильный прямоугольник</value>
+  </data>
+  <data name="YourScore" xml:space="preserve">
+    <value>Ваша оценка</value>
+  </data>
+  <data name="YourTurn" xml:space="preserve">
+    <value>Ваша очередь!</value>
+  </data>
+  <data name="YourTurnMessage" xml:space="preserve">
+    <value>Это ваша очередь, чтобы соответствовать последовательности. Нажмите на прямоугольник, который вы только что видели. Как только вы это сделаете, вы увидите ту же последовательность снова отображается с одним дополнительным прямоугольником добавлены в последовательности.</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>О</value>
+  </data>
+  <data name="EasyLower" xml:space="preserve">
+    <value>легко</value>
+  </data>
+  <data name="ErrorProcessingRequest" xml:space="preserve">
+    <value>ошибка</value>
+  </data>
+  <data name="ErrorRequestMessage" xml:space="preserve">
+    <value>Произошла ошибка при обработке данного запроса. Вы хотели бы отправить детали для разработчика, чтобы помочь получить это постоянное как можно скорее?</value>
+  </data>
+  <data name="GameRectangleColor" xml:space="preserve">
+    <value>Цвет игры Прямоугольник</value>
+  </data>
+  <data name="GoodLuck" xml:space="preserve">
+    <value>Удачи!</value>
+  </data>
+  <data name="HardLower" xml:space="preserve">
+    <value>жесткий</value>
+  </data>
+  <data name="InstructionsMessage" xml:space="preserve">
+    <value>Память Squared это игра, которая проверит вашу память! Объект игры состоит в том, чтобы соответствовать модели вы видите. Когда начинается игра, вы увидите обратного отсчета с 3. После этого один прямоугольник загорается. Тогда это ваша очередь, чтобы соответствовать шаблону. При нажатии на прямоугольник, который изменил цвета, вы увидите тот же прямоугольник изменение цвета снова следуют одна случайная прямоугольник - то это ваша очередь снова, и так далее. Подходим столько прямоугольников, как вы можете, и не забудьте добавить свои результаты на лидеров! См., кто может получить высокий балл между вами и вашими друзьями!</value>
+  </data>
+  <data name="InstructionsTitle" xml:space="preserve">
+    <value>инструкции</value>
+  </data>
+  <data name="OptionsLower" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="PurchaseSuccessful" xml:space="preserve">
+    <value>Покупка успешным!</value>
+  </data>
+  <data name="RemoveAds" xml:space="preserve">
+    <value>Удалить объявления</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Успех!</value>
+  </data>
+  <data name="UserRectangleColor" xml:space="preserve">
+    <value>Прямоугольник цвета</value>
+  </data>
+  <data name="SequenceStartPrompt" xml:space="preserve">
+    <value>Показывать всплывающий, когда последовательность начинается</value>
+  </data>
+  <data name="LangRegionNameEnUs" xml:space="preserve">
+    <value>Английский, Соединенные Штаты</value>
+  </data>
+  <data name="LangRegionNameEsES" xml:space="preserve">
+    <value>Испанский, Испания</value>
+  </data>
+  <data name="ErrorLastTimeMessage" xml:space="preserve">
+    <value>Es gab ein Problem das letzte Mal gespielt thsi Spiel. Möchten Sie die Entwickler mitteilen?</value>
+  </data>
+  <data name="ErrorReport" xml:space="preserve">
+    <value>Отчет об ошибке</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Ток: </value>
+  </data>
+  <data name="UseLightTheme" xml:space="preserve">
+    <value>Тема использования света</value>
+  </data>
+</root>

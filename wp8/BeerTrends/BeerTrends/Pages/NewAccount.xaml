@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BeerTrends.Pages.NewAccount"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#F1BE00">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer  Grid.Row="1" Margin="12">
+            <StackPanel x:Name="ContentPanel">
+                <TextBlock Text="New Account" Margin="0 0 0 30" HorizontalAlignment="Center" />
+                <toolkit:PhoneTextBox x:Name="txtName" Hint="full name" />
+                <!--<toolkit:PhoneTextBox x:Name="txtLastName" Hint="last name" />-->
+                <toolkit:PhoneTextBox x:Name="txtEmail" Hint="email address" />
+                <TextBlock Text="Date of Birth:"/>
+                <toolkit:DatePicker x:Name="dpDob"/>
+                <toolkit:ListPicker x:Name="lpGender">
+                    <toolkit:ListPickerItem Content="Choose a gender..."/>
+                    <toolkit:ListPickerItem Content="Male"/>
+                    <toolkit:ListPickerItem Content="Female"/>
+                </toolkit:ListPicker>
+                <toolkit:PhoneTextBox x:Name="txtZip" Hint="zip code" />
+               
+                <!--<toolkit:PhoneTextBox x:Name="txtDisplayName" Hint="display name"/>-->
+                
+                <!--PASSWORD FIX SINCE I CAN'T PUT PLACEHOLDER TEXT IN-->
+                <TextBox x:Name="PasswordWatermark" 
+                     TextWrapping="Wrap" 
+                     Text="password" 
+                     Foreground="{StaticResource PhoneTextBoxReadOnlyBrush}" 
+                     GotFocus="PasswordGotFocus"/>
+                <PasswordBox x:Name="txtPassword" Visibility="Collapsed" LostFocus="PasswordLostFocus" />
+                
+                <Button x:Name="btnCreate" Content="Create Account"/>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

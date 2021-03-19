@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BeerTrends.Pages.Beer.List"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:BeerTrends.View"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#F1BE00">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12">
+            <TextBlock x:Name="lblTitle" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <views:BeerListView Grid.Row="1" Margin="12,0,12,12" x:Name="BeerListView"/>
+        <StackPanel x:Name="spLoading" Grid.Row="2" Margin="0" VerticalAlignment="Center" Visibility="Collapsed">
+            <TextBlock Text="Searching..." TextAlignment="Center"/>
+            <ProgressBar x:Name="pbLoading"  Maximum="100" Height="15" IsIndeterminate="True"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

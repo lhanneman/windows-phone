@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="BeerTrends.Pages.Beer.Terms"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#F1BE00">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12">
+            <TextBlock Text="TERMINOLOGY" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            
+            <!--ABV-->
+            <StackPanel Orientation="Horizontal">
+                <toolkit:WrapPanel MaxWidth="{Binding ActualWidth, ElementName=ContentPanel}">
+                    <TextBlock Text="ABV: " FontWeight="Bold"/>
+                    <TextBlock Text="Alcohol by Volume (abbreviated as ABV, abv, or alc/vol) is a standard measure of how much alcohol (ethanol) is contained in an alcoholic beverage. It is defined as the number of milliliters of pure ethanol present in 100 millilters of solution at 20 degrees Celcius." TextWrapping="Wrap"/>
+                </toolkit:WrapPanel>
+            </StackPanel>
+
+            <!--IBU-->
+            <StackPanel Orientation="Horizontal">
+                <toolkit:WrapPanel MaxWidth="{Binding ActualWidth, ElementName=ContentPanel}">
+                    <TextBlock Text="IBU: " FontWeight="Bold"/>
+                    <TextBlock Text="The International Bittering Units scale, or simply IBU scale, provides a measure of the bitterness of beer, which is provied by the hops during brewing. Bittering units are measured through the use of a spectrophotometer and solvent extraction." TextWrapping="Wrap"/>
+                </toolkit:WrapPanel>
+            </StackPanel>
+        </StackPanel>
+        
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
